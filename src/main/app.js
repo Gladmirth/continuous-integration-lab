@@ -7,6 +7,11 @@ app.get('/', (req, res) => {
     res.status(200).send('Woah!')
 })
 
+app.get('/hi', (req, res) => {
+    // the .status(200) isn't necessary since it is the default return status
+    res.status(200).send('hi')
+})
+
 app.listen(3000, () => {
     console.log('Example app listening on http://localhost:3000')
 })
